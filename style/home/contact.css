@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    background-color: rgba(8, 135, 105, 0.1);
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #0078D4;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;    
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+#nav >li:hover > .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover >a{
+    color: white;
+    background-color: #181821;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav a{
+    color: black;
+    display: block;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+
+#menu .search-btn{
+    float: right;
+}
+
+#menu .search-btn:hover{
+    background-color: rgb(233, 69, 69);
+    cursor: pointer;
+}
+
+#menu .search-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#contact-header{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+form {
+    position: relative;
+    top: 150px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #666;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+#footer {
+    background-color: #181821;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: auto 0;
+    min-height: 150px;
+}
+
+#footer p {
+    color: white;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#footer span{
+    font-weight: lighter;
+}
